@@ -15,7 +15,7 @@ function App() {
   return (
     <>
       <div id="clock">
-        <p className="time">{counter === 0 ? '00:00' : timerConvert(counter)}</p>
+        <p className="time">{counter === 0 ? '00:00:00' : timerConvert(counter)}</p>
         <div id="button-container">
           <Button
             onClick={() => counterIncrement(60)}
