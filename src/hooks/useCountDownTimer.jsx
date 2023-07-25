@@ -1,4 +1,4 @@
-import cafeAudio from '../assets/depression.mp3' 
+import cafeAudio from '../assets/depression.mp3'
 import Swal from 'sweetalert2'
 import { useCallback, useEffect, useState } from 'react'
 
@@ -44,11 +44,23 @@ function CountDownTimer() {
   }, [intervalId]);
 
   const startTimer = () => {
-    if (!isTimerRunning) {
-      setIsTimerRunning(true);
-      setIntervalId(setInterval(() => {
-        setCounter((prevCounter) => prevCounter - 1);
-      }, 1000));
+    try {
+      if (counter === 0 && !isTimerRunning) throw new Error('Please increment the counter before starting the timer.')
+      if (!isTimerRunning) {
+        setIsTimerRunning(true);
+        setIntervalId(setInterval(() => {
+          setCounter((prevCounter) => prevCounter - 1);
+        }, 1000));
+      }
+    } catch (error) {
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        background: '#010D12',
+        color: '#FFFFFF',
+        confirmButtonColor: '#0d6efd',
+        text: error.message,
+      })
     }
   };
 
