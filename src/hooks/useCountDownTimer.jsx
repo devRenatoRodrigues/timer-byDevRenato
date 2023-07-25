@@ -3,7 +3,7 @@ import Swal from 'sweetalert2'
 import { useCallback, useEffect, useState } from 'react'
 
 function CountDownTimer() {
-  const [counter, setCounter] = useState(5);
+  const [counter, setCounter] = useState(0);
   const [isTimerRunning, setIsTimerRunning] = useState(false);
   const [intervalId, setIntervalId] = useState(null);
 
