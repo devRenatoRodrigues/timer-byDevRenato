@@ -1,9 +1,23 @@
-# React + Vite
+# Timer-byDevRenato
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Timer is a simple and practical application that allows the user to define a period of time and monitor
 
-Currently, two official plugins are available:
+# Resources
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# timer-byDevRenato
+* Easily set the desired time.
+* Start, pause and restart the countdown.
+* Receive notifications when the countdown ends.
+* Intuitive and easy to use user interface.
+
+# Usage
+
+* Set the time by clicking on the buttons
+* You can pause the timer at any time by clicking the "Stop" button.
+* To reset the timer, click the "Clear" button.
+* When the countdown ends, a sound will alert you.
+
+# Credits
+This application was developed by devRenatoRodrigues
+
+# Thanks
+Thanks to trybe for teaching me programming
