@@ -8,17 +8,20 @@ function CountDownTimerProvider({ children }) {
     const {
         counter, setCounter, counterIncrement, startTimer,
         stopTimer,
-        isTimerRunning
+        isTimerRunning,
+        clearButton,
     } = CountDownTimer();
 
     const context = useMemo(() => ({
         counter, setCounter, counterIncrement, startTimer,
         stopTimer,
-        isTimerRunning
+        isTimerRunning,
+        clearButton
     }), [
         counter, setCounter, counterIncrement, startTimer,
         stopTimer,
-        isTimerRunning
+        isTimerRunning,
+        clearButton
     ]);
 
     return (

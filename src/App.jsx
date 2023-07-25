@@ -9,7 +9,8 @@ function App() {
     counterIncrement,
     startTimer,
     stopTimer,
-    isTimerRunning
+    isTimerRunning,
+    clearButton,
   } = useCountDownTimerContext()
   return (
     <>
@@ -20,19 +21,19 @@ function App() {
             onClick={() => counterIncrement(60)}
             tittle={'1 minuto'}
             type={"button"}
-            className={"btn btn-outline-info button-margin"}
+            className={"btn btn-outline-primary button-margin"}
           />
           <Button
             onClick={() => counterIncrement(300)}
             tittle={'5 minutos'}
             type={"button"}
-            className={"btn btn-outline-info button-margin"}
+            className={"btn btn-outline-primary button-margin"}
           />
           <Button
             onClick={() => counterIncrement(600)}
             tittle={'10 minutos'}
             type={"button"}
-            className={"btn btn-outline-info button-margin"}
+            className={"btn btn-outline-primary button-margin"}
           />
           {isTimerRunning ? <Button
             onClick={() => stopTimer()}
@@ -45,6 +46,12 @@ function App() {
             type={"button"}
             className={"btn btn-outline-success button-margin"}
           />}
+          <Button
+            onClick={() => clearButton()}
+            tittle={'Clear'}
+            type={"button"}
+            className={"btn btn-outline-info button-margin"}
+          />
         </div>
         <p className="text" >Timer byDevRenatoRodrigues</p>
       </div>
