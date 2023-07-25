@@ -12,13 +12,13 @@ function CountDownTimer() {
     return setCounter(sum);
   };
 
-  const playCafe = () => {
+  const whenTimeEnds = () => {
     const audioElement = new Audio(cafeAudio)
     audioElement.play()
     Swal.fire({
       title: 'CoffeBreak is over!!',
       text: 'Back to the Office, Now!!',
-      imageUrl: 'src/assets/sales-lessons-from-michael-scott.jpg',
+      imageUrl: 'https://www.looper.com/img/gallery/what-filming-the-final-office-episode-with-steve-carell-was-like/intro-1624323448.jpg',
       background: '#010D12',
       color: '#FFFFFF',
       confirmButtonColor: '#0d6efd',
@@ -55,7 +55,7 @@ function CountDownTimer() {
   useEffect(() => {
     if (isTimerRunning && counter === 0) {
       stopTimer();
-      playCafe();
+      whenTimeEnds();
     }
   }, [isTimerRunning, counter, stopTimer]);
 
