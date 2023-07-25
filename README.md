@@ -1,8 +1,10 @@
+# Deployed at
+ https://timer-by-dev-renato.vercel.app/
 # Timer-byDevRenato
 
 Timer is a simple and practical application that allows the user to define a period of time and monitor
 
-# Resources
+# ResourcesObrigado a trybe por me ensinar programaçãodomain
 
 * Easily set the desired time.
 * Start, pause and restart the countdown.
