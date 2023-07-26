@@ -16,8 +16,8 @@ function CountDownTimer() {
     const audioElement = new Audio(cafeAudio)
     audioElement.play()
     Swal.fire({
-      title: 'CoffeBreak is over!!',
-      text: 'Back to the Office, Now!!',
+      title: 'Coffebreak is over!!',
+      text: 'Back to the office, NOW!!',
       imageUrl: 'https://www.looper.com/img/gallery/what-filming-the-final-office-episode-with-steve-carell-was-like/intro-1624323448.jpg',
       background: '#010D12',
       color: '#FFFFFF',
